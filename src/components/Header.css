@@ -1,0 +1,48 @@
+/* Fondo gradiente en el encabezado */
+.header {
+  background: linear-gradient(90deg, #ffcc66, #ff9933);
+  padding: 2rem 0;
+  text-align: center;
+  color: #333;
+}
+
+/* Estilo para el título animado */
+.header-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+/* Estilos para la barra de navegación */
+.nav-bar {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-bar a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Espacio entre el icono y el texto */
+  transition: color 0.3s, transform 0.3s;
+}
+
+.nav-bar a:hover {
+  color: #555;
+  transform: scale(1.05); /* Aumenta un poco el tamaño al pasar el cursor */
+}
+
+/* Estilo para el texto de introducción */
+.introduction {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 700px;
+  margin: 20px auto;
+  line-height: 1.6;
+}
