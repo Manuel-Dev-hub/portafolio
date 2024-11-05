@@ -1,37 +1,41 @@
-import React, { useEffect } from 'react';
+// src/App.js
+
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import NavWheel from './components/NavWheel';
 import Header from './components/Header';
 import Home from './components/Home';
 import Projects from './components/Projects';
-import Testimonials from './components/Testimonials';
 import Blog from './components/Blog';
 import Contact from './components/Contact';
 import AboutMe from './components/AboutMe';
 import Skills from './components/Skills';
 import Recognition from './components/Recognition';
+import Testimonials from './components/Testimonials';
+import ContactButtons from './components/ContactButtons';
+import YourComponent from './components/YourComponent';
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
+
   useEffect(() => {
-    // Desplazar a la parte superior (header) al cargar la página
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, []);
 
+  const toggleTheme = () => {
+    setDarkMode(!darkMode);
+  };
+
   return (
-    <div className="App">
-      <Header />
-      {/* Sección de la rueda de navegación y cuadro de bienvenida que ocupa toda la pantalla inicial */}
+    <div className={`App ${darkMode ? 'dark-mode' : ''}`}>
+      <Header toggleTheme={toggleTheme} darkMode={darkMode} />
       <section className="full-screen-section">
         <Home />
         <NavWheel />
       </section>
-
-      {/* Otras secciones que aparecen al hacer scroll hacia abajo */}
+      <YourComponent /> {/* Componente con el fondo de la imagen */}
       <section id="projects">
         <Projects />
-      </section>
-      <section id="testimonials">
-        <Testimonials />
       </section>
       <section id="blog">
         <Blog />
@@ -48,6 +52,10 @@ function App() {
       <section id="recognition">
         <Recognition />
       </section>
+      <section id="testimonials">
+        <Testimonials />
+      </section>
+      <ContactButtons />
     </div>
   );
 }

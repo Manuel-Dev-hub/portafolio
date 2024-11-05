@@ -1,37 +1,42 @@
 #home {
-    background-color: #ffffff;
-    padding: 2rem;
-    text-align: center;
-    width: 320px;
-    border-left: 20px solid #4CAF50;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    font-family: Arial, sans-serif;
-    color: #333;
-    margin: 0 auto;
-  }
-  
-  .profile-image {
-    width: 117px;
-    height: 126px;
-    border-radius: 50%;
-    margin-bottom: 1rem;
-    object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: -6rem;
-  }
-  
-  #home h1 {
-    font-size: 22px;
-    color: #333;
-    margin-bottom: 1rem;
-    font-weight: bold;
-  }
-  
-  #home p {
-    font-size: 14px;
-    color: #666;
-    line-height: 1.6;
-    margin: 0.5rem 0;
-  }
-  
+  background-color: #ffffff;
+  padding: 2rem;
+  text-align: center;
+  width: 320px;
+  border-left: 20px solid #4CAF50;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  margin: 0 auto; /* Centra la tarjeta en pantalla */
+  position: relative;
+  left: 190px; /* Ajusta este valor para mover la tarjeta hacia la derecha */
+}
+
+.profile-image {
+  width: 117px;
+  height: 126px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: -6rem;
+}
+
+#home h1 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+#home p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}

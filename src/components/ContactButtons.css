@@ -1,0 +1,50 @@
+.contact-buttons {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 10;
+  }
+  
+  .contact-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white; /* Color de texto por defecto */
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Colores de fondo para cada botón */
+  .contact-button.whatsapp { background-color: #25D366; }
+  .contact-button.linkedin { background-color: #0A66C2; }
+  .contact-button.email { background-color: #D44638; }
+  .contact-button.github { background-color: #333; }
+  
+  /* Estilos para hover */
+  .contact-button:hover {
+    opacity: 0.9;
+    transform: scale(1.05); /* Efecto de zoom en hover */
+  }
+  
+  /* Estilos específicos para modo oscuro */
+  .dark-mode .contact-button {
+    color: white; /* Cambia el color del texto a blanco en modo oscuro */
+  }
+  
+  .dark-mode .contact-button.github {
+    background-color: #444; /* Ajusta el color de fondo del botón de GitHub para modo oscuro */
+  }
+  
+  .dark-mode .contact-button.linkedin,
+  .dark-mode .contact-button.whatsapp,
+  .dark-mode .contact-button.email {
+    color: white; /* Asegura que el texto de todos los botones sea blanco en modo oscuro */
+  }
+  

@@ -27,7 +27,7 @@
   width: 750px;
   height: 750px;
   border-radius: 50%;
-  background-color: #FF9933;
+  background-color: #fded04;
   padding: 30px;
 }
 
@@ -112,3 +112,8 @@
 .nav-button:nth-child(6) { bottom: 14%; left: 77%; transform: translate(-50%, 50%); }
 .nav-button:nth-child(7) { bottom: 14%; left: 23%; transform: translate(-50%, 50%); }
 .nav-button:nth-child(8) { top: 55%; left: 5%; transform: translate(-50%, -50%); }
+
+/* Modo oscuro para los botones de navegación */
+.dark-mode .nav-button {
+  color: #000000; /* Cambia el color del texto a negro en modo oscuro */
+}
