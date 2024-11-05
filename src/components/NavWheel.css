@@ -24,11 +24,12 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 750px;
-  height: 750px;
+  width: 600px;
+  height: 600px;
   border-radius: 50%;
-  background-color: #fded04;
-  padding: 30px;
+  background-color: #FF5722;
+  padding: 20px;
+  margin-left: 145px; /* Ajuste para centrar el círculo junto a la tarjeta */
 }
 
 .rotating-wheel {
@@ -60,7 +61,7 @@
 
 .welcome-message {
   position: absolute;
-  top: -99px;
+  top: -40px;
   font-size: 13px;
   color: #333;
   background-color: rgba(255, 255, 255, 0.9);
@@ -92,28 +93,43 @@
 
 .nav-button {
   position: absolute;
-  width: 149px;
-  height: 80px;
-  border-radius: 15%;
-  background-color: #ffffff;
-  color: black;
-  text-align: center;
-  line-height: 80px;
-  text-decoration: none;
-  font-weight: bold;
+  width: 200px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: #333; /* Color de fondo oscuro como una terminal */
+  color: #00ff00; /* Color verde como texto de terminal */
+  text-align: left; /* Alineación del texto a la izquierda */
+  padding: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 10px;
+  white-space: nowrap;
+  overflow: hidden;
   border: 2px solid rgba(0, 0, 0, 0.2);
   z-index: 2;
 }
+/* Animación de máquina de escribir */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
 
-.nav-button:nth-child(2) { top: 10%; left: 50%; transform: translate(-50%, -50%); }
-.nav-button:nth-child(3) { top: 26%; left: 11%; transform: translate(-50%, -50%); }
-.nav-button:nth-child(4) { top: 26%; right: 1%; transform: translate(-50%, -50%); }
-.nav-button:nth-child(5) { bottom: 35%; right: -5%; transform: translate(-50%, -50%); }
-.nav-button:nth-child(6) { bottom: 14%; left: 77%; transform: translate(-50%, 50%); }
-.nav-button:nth-child(7) { bottom: 14%; left: 23%; transform: translate(-50%, 50%); }
-.nav-button:nth-child(8) { top: 55%; left: 5%; transform: translate(-50%, -50%); }
+.typing-text {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid; /* Línea del cursor */
+  animation: typing 7s steps(60, end), blinkCursor 0.5s step-end infinite;
+  animation-delay: 60s; /* Espera de 1 segundo antes de que comience nuevamente */
+  animation-iteration-count: infinite; /* Hace que se repita infinitamente */
+}
+
+/* Ajuste las posiciones de los botones restantes en el círculo */
+.nav-button:nth-child(2) { top: 2%; left: 50%; transform: translate(-50%, -50%); }
+.nav-button:nth-child(3) { top: 24%; left: 96%; transform: translate(-50%, -50%); }
+.nav-button:nth-child(4) { bottom: 35%; right: -27%; transform: translate(-50%, -50%); }
+.nav-button:nth-child(5) { bottom: 15%; left: 71%; transform: translate(-50%, 50%); }
 
 /* Modo oscuro para los botones de navegación */
 .dark-mode .nav-button {
-  color: #000000; /* Cambia el color del texto a negro en modo oscuro */
+  color: #00ff00; /* Cambia el color del texto a negro en modo oscuro */
 }

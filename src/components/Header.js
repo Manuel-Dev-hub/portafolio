@@ -53,9 +53,6 @@ const Header = ({ toggleTheme, darkMode }) => {
           <FontAwesomeIcon icon={darkMode ? faMoon : faSun} />
         </button>
       </nav>
-      <p className="introduction">
-        Soy Manuel Antonio Rios Cardona, apasionado por la tecnología y el desarrollo web, con 1 año y medio de experiencia creando herramientas digitales para potenciar el crecimiento de las empresas.
-      </p>
     </header>
   );
 };
