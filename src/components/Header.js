@@ -1,36 +1,49 @@
 import React, { useState, useEffect } from 'react';
 import './Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faUser, faTools, faAward, faEnvelope, faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faUser, faTools, faAward, faEnvelope, faSun, faMoon, faBars } from '@fortawesome/free-solid-svg-icons';
 
 const Header = ({ toggleTheme, darkMode }) => {
   const [clicked, setClicked] = useState(null);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 468);
 
   const handleScroll = () => {
-    if (window.scrollY > 50) {
-      setIsScrolled(true);
-    } else {
-      setIsScrolled(false);
-    }
+    setIsScrolled(window.scrollY > 50);
   };
 
   useEffect(() => {
+    const handleResize = () => {
+      setIsMobileView(window.innerWidth <= 468);
+    };
+
     window.addEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleResize);
+    
     return () => {
       window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
 
   const handleClick = (link) => {
     setClicked(link);
     setTimeout(() => setClicked(null), 200);
+    setIsMenuOpen(false);
+  };
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
     <header className="header">
-      <h1 className="header-title">Bienvenido a Mi Portafolio</h1>
-      <nav className={`nav-bar ${isScrolled ? 'fixed' : ''}`}>
+      <h1 className="header-title">{isMobileView ? 'Bienvenido' : 'Bienvenido a Mi Portafolio'}</h1>
+      <button className="menu-toggle" onClick={toggleMenu}>
+        <FontAwesomeIcon icon={faBars} />
+      </button>
+      <nav className={`nav-bar ${isScrolled ? 'fixed' : ''} ${isMenuOpen ? 'open' : ''}`}>
         <a href="#projects" onClick={() => handleClick('projects')}>
           <FontAwesomeIcon icon={faHome} /> Proyectos
         </a>

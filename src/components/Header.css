@@ -1,3 +1,4 @@
+/* Estilo básico del encabezado y menú */
 .header {
   width: 100vw;
   background-color: #ffffff;
@@ -13,8 +14,24 @@
   font-size: 2.5rem;
   font-weight: bold;
   color: #2A3D45;
-  margin: -9;
+  margin: 0;
 }
+
+/* Media query para pantallas medianas (por debajo de 768px) */
+@media (max-width: 768px) {
+  .header-title {
+    font-size: 1.5rem; /* Ajusta el tamaño de fuente para 768px o menos */
+  }
+}
+
+/* Media query para pantallas pequeñas (por debajo de 468px) */
+@media (max-width: 468px) {
+  .header-title {
+    font-size: 1.5rem; /* Tamaño de fuente más pequeño para 468px o menos */
+    content: "Bienvenido"; /* Cambia el texto a solo "Bienvenido" */
+  }
+}
+
 
 .nav-bar {
   display: flex;
@@ -63,11 +80,11 @@
   transform: scale(0.9);
 }
 
-/* Ajuste de la posición del botón de cambio de tema */
+/* Botón de cambio de tema */
 .theme-toggle {
   position: relative;
-  left: -20px; /* Ajusta este valor para mover el botón a la izquierda o derecha */
-  top: 5px;    /* Ajusta este valor para mover el botón hacia arriba o abajo */
+  left: -20px;
+  top: 5px;
   background-color: transparent;
   border: none;
   font-size: 1.8rem;
@@ -81,31 +98,43 @@
   transform: scale(1.1);
 }
 
-.introduction {
-  font-size: 1.2rem;
-  color: #4A6572;
-  max-width: 700px;
-  margin: 20px auto;
-  line-height: 1.6;
-  text-align: center;
-  padding: 0 20px;
+/* Botón de menú (hamburguesa) */
+.menu-toggle {
+  display: none; /* Oculto por defecto */
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: #333;
+  cursor: pointer;
+}
+/* Modo oscuro para el botón de hamburguesa */
+.dark-mode .menu-toggle {
+  color: #FFFFFF; /* Cambia a blanco en modo oscuro */
 }
 
-/* Modo oscuro */
-.dark-mode {
-  background-color: #2E2E2E;
-  color: #E0E0E0;
-}
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* Visible solo en pantallas pequeñas */
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
 
-.dark-mode .header {
-  background-color: #3A3A3A;
-}
+  .nav-bar {
+    display: none; /* Oculta el menú en pantallas pequeñas */
+    flex-direction: column;
+    gap: 10px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    left: 0;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
 
-.dark-mode h1, .dark-mode p, .dark-mode a {
-  color: #E0E0E0;
-}
-
-.dark-mode .full-screen-section, .dark-mode section {
-  background-color: #3A3A3A;
-  border-color: #444;
+  .nav-bar.open {
+    display: flex; /* Muestra el menú cuando está abierto */
+  }
 }

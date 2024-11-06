@@ -41,3 +41,53 @@
   justify-content: center;
   gap: 8px;
 }
+
+/* Media query para pantallas más pequeñas (tablets) */
+@media (max-width: 768px) {
+  #home {
+    width: 38%; /* Ajuste del ancho en tablets */
+    left: -215px; /* Ajuste de posición */
+    padding: 0.5rem;
+    margin-top: 15px;
+  }
+
+  #home h1 {
+    font-size: 20px;
+  }
+
+  #home p {
+    font-size: 13px;
+  }
+
+  .profile-image {
+    width: 100px;
+    height: 110px;
+    margin-top: -6rem;
+    border-radius: 40%;
+  }
+}
+
+/* Media query para pantallas muy pequeñas (móviles) */
+@media (max-width: 480px) {
+  #home {
+    width: 100%;
+    left: 6px;
+    padding: 0rem;
+    margin: 11px auto;
+    top: -32px;
+  }
+
+  #home h1 {
+    font-size: 18px;
+  }
+
+  #home p {
+    font-size: 12px;
+  }
+
+  .profile-image {
+    width: 80px;
+    height: 90px;
+    margin-top: -2.5rem;
+  }
+}
