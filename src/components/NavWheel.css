@@ -69,6 +69,7 @@
 
 /* Media query para pantallas pequeñas (móviles) */
 /* Media query para ocultar los cuadros animados en resolución de 468px o menos */
+/* Media query para pantallas pequeñas (celulares, resolución de 468px o menos) */
 @media (max-width: 468px) {
   .nav-button {
     display: none; /* Oculta los cuadros con texto animado */
@@ -82,11 +83,19 @@
     width: 250px; /* Ajusta el tamaño del círculo para que solo contenga al robot */
     height: 250px;
     padding: 10px;
+    background-color: #f0f0f0; /* Color de fondo para el robot */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; /* Mantiene el círculo */
   }
 
   .robot {
-    width: 150px; /* Ajusta el tamaño del robot */
-    height: 150px;
+    width: 100px; /* Ajusta el tamaño del robot */
+    height: 100px;
+    position: relative;
+    left: -174px; /* Ajusta la posición horizontal solo en esta resolución */
+    top: 154px; /* Ajusta la posición vertical solo en esta resolución */
   }
 }
 

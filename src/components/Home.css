@@ -8,7 +8,7 @@
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   color: #333;
-  margin: 39px auto;
+  margin: 162px auto;
   position: relative;
   z-index: 1;
   left: -258px; /* Ajuste para mover la tarjeta hacia la izquierda */
@@ -71,10 +71,10 @@
 @media (max-width: 480px) {
   #home {
     width: 100%;
-    left: 6px;
+    left: 3px;
     padding: 0rem;
-    margin: 11px auto;
-    top: -32px;
+    margin: px auto;
+    top: -3px;
   }
 
   #home h1 {

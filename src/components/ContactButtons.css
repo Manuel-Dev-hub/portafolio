@@ -56,11 +56,11 @@
 /* Media Query para pantallas de hasta 480px (móviles) */
 @media (max-width: 480px) {
   .contact-button {
-      width: 100px; /* Reduce aún más el ancho de los botones */
-      padding: 6px; /* Reduce el padding */
-      border-radius: 50%; /* Convierte los botones en círculos */
-      font-size: 0.8rem; /* Ajusta el tamaño de la fuente */
+      width: 82px; /* Reduce aún más el ancho de los botones */
+      padding: 0px; /* Reduce el padding */
+      border-radius: -1%; /* Convierte los botones en círculos */
+      font-size: 0.6rem; /* Ajusta el tamaño de la fuente */
       text-align: center; /* Centra el texto */
-      height: 50px; /* Ajusta la altura para que el botón sea circular */
+      height: 30px; /* Ajusta la altura para que el botón sea circular */
   }
 }
