@@ -1,0 +1,76 @@
+/* AboutMe.css */
+
+.about-section {
+    padding: 3rem 10rem; /* Aumenta el padding lateral para pantallas grandes */
+    background-color: #f8f9fa;
+    text-align: center;
+    color: #333;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.about-section p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    max-width: 1400px; /* Aumenta el ancho máximo para pantallas grandes */
+    margin: 0 auto; /* Centra el contenido */
+}
+
+.about-text {
+    max-width: 800px; /* Aumenta el ancho del texto */
+    text-align: left;
+}
+
+.about-text p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #555;
+}
+
+.about-image img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Media query para pantallas grandes */
+@media (min-width: 1440px) {
+    .about-section {
+        padding: 3rem 15rem; /* Expande aún más el padding en pantallas muy grandes */
+    }
+
+    .about-content {
+        max-width: 100%; /* Aumenta el ancho total en pantallas muy grandes */
+    }
+}
+
+/* Ajuste para pantallas medianas (tablets y móviles) */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+
+    .about-section {
+        padding: 2rem 1rem; /* Reduce el padding lateral en dispositivos pequeños */
+    }
+}

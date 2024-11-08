@@ -34,27 +34,30 @@ function App() {
         <NavWheel />
       </section>
       <YourComponent /> {/* Componente con el fondo de la imagen */}
+      
+      {/* Nuevo orden de las secciones */}
       <section id="projects">
         <Projects />
-      </section>
-      <section id="blog">
-        <Blog />
-      </section>
-      <section id="contact">
-        <Contact />
-      </section>
-      <section id="about-me">
-        <AboutMe />
-      </section>
-      <section id="skills">
-        <Skills />
       </section>
       <section id="recognition">
         <Recognition />
       </section>
+      <section id="skills">
+        <Skills />
+      </section>
       <section id="testimonials">
         <Testimonials />
       </section>
+      <section id="blog">
+        <Blog />
+      </section>
+      <section id="about-me">
+        <AboutMe />
+      </section>
+      <section id="contact">
+        <Contact />
+      </section>
+      
       <ContactButtons />
     </div>
   );

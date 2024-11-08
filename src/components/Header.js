@@ -53,17 +53,17 @@ const Header = ({ toggleTheme, darkMode }) => {
         <a href="#projects" onClick={handleNavLinkClick}>
           <FontAwesomeIcon icon={faHome} /> Proyectos
         </a>
-        <a href="#about-me" onClick={handleNavLinkClick}>
-          <FontAwesomeIcon icon={faUser} /> Sobre Mí
+        <a href="#recognition" onClick={handleNavLinkClick}>
+          <FontAwesomeIcon icon={faAward} /> Reconocimientos
         </a>
         <a href="#skills" onClick={handleNavLinkClick}>
           <FontAwesomeIcon icon={faTools} /> Habilidades
         </a>
-        <a href="#recognition" onClick={handleNavLinkClick}>
-          <FontAwesomeIcon icon={faAward} /> Reconocimientos
-        </a>
         <a href="#testimonials" onClick={handleNavLinkClick}>
           <FontAwesomeIcon icon={faEnvelope} /> Testimonios
+        </a>
+        <a href="#about-me" onClick={handleNavLinkClick}>
+          <FontAwesomeIcon icon={faUser} /> Sobre Mí
         </a>
         <a href="#contact" onClick={handleNavLinkClick}>
           <FontAwesomeIcon icon={faEnvelope} /> Contacto

@@ -1,0 +1,133 @@
+/* Animación para las tarjetas */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.project-card {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.projects-section {
+  padding: 5rem 1rem;
+  background-color: #f8f9fa;
+  text-align: center;
+  position: relative;
+}
+
+.projects-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.projects-section p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 2.5rem;
+}
+
+/* Grid para mostrar tres columnas en pantallas grandes */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tres columnas en escritorio */
+  gap: 2rem;
+  justify-content: center;
+}
+
+.project-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 3px solid #007bff;
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  color: #333;
+  padding: 1rem;
+  text-align: center;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #666;
+  padding: 0 1rem 1rem;
+}
+
+.project-link {
+  display: inline-block;
+  margin: 0 1rem 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: #ffffff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+  background-color: #0056b3;
+}
+
+/* Media query para pantallas medianas (tablet) */
+@media (max-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas en tabletas */
+  }
+
+  .projects-section h2 {
+    font-size: 2rem;
+  }
+}
+
+/* Media query para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr; /* Una columna en móviles */
+  }
+
+  .projects-section {
+    padding: 3rem 1rem;
+  }
+
+  .projects-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .projects-section p {
+    font-size: 1rem;
+  }
+
+  .project-image {
+    height: 150px;
+  }
+
+  .project-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .project-card p {
+    font-size: 0.9rem;
+  }
+}

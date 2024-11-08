@@ -1,11 +1,25 @@
 // src/components/AboutMe.js
 import React from 'react';
+import './AboutMe.css';
 
 const AboutMe = () => {
   return (
-    <section id="about-me" style={{ backgroundColor: 'white', padding: '2rem', textAlign: 'center' }}>
+    <section id="about-me" className="about-section">
       <h2>Sobre Mí</h2>
-      <p>Información sobre mi carrera y habilidades.</p>
+      <p>Soy un desarrollador Full Stack con pasión por crear soluciones innovadoras y efectivas.</p>
+      <div className="about-content">
+        <div className="about-text">
+          <p>
+            Con más de un año de experiencia en desarrollo web, he trabajado en proyectos de e-commerce, aplicaciones empresariales y sitios personalizados. Mi enfoque está en construir productos escalables que mejoren la experiencia del usuario.
+          </p>
+          <p>
+            Mis habilidades abarcan tecnologías como React, Node.js, MongoDB, y mucho más. Me gusta colaborar con otros profesionales para resolver problemas complejos y crear soluciones robustas.
+          </p>
+        </div>
+        <div className="about-image">
+          <img src="https://via.placeholder.com/250" alt="Perfil" />
+        </div>
+      </div>
     </section>
   );
 };
