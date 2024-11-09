@@ -1,5 +1,3 @@
-/* Skills.css */
-
 .skills-section {
     padding: 3rem 5rem;
     background-color: #f8f9fa;
@@ -16,6 +14,12 @@
     font-size: 1rem;
     color: #666;
     margin-bottom: 2rem;
+}
+
+/* Estilos para modo oscuro */
+.dark-mode .skills-section h2,
+.dark-mode .skills-section p {
+    color: #ffffff; /* Cambia el color a blanco en modo oscuro */
 }
 
 .skills-grid {

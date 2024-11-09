@@ -96,3 +96,8 @@
         padding: 2rem 1rem; /* Reduce el padding lateral en dispositivos más pequeños */
     }
 }
+/* Modo oscuro para el título y la descripción en la sección de contacto */
+.dark-mode .contact-section h2,
+.dark-mode .contact-section p {
+    color: #ffffff; /* Título y descripción en blanco en modo oscuro */
+}

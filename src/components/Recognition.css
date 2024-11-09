@@ -16,6 +16,12 @@
   margin-bottom: 2rem;
 }
 
+/* Estilos para modo oscuro */
+.dark-mode .recognition-section h2,
+.dark-mode .recognition-section > p {
+  color: #ffffff; /* Cambia el color a blanco en modo oscuro para el título y la descripción principal */
+}
+
 .recognition-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Tres columnas en escritorio */
@@ -48,6 +54,11 @@
   font-size: 1.5rem;
   color: #333;
   margin-bottom: 0.5rem;
+}
+
+/* Mantener las descripciones en color negro en modo oscuro */
+.dark-mode .recognition-card p {
+  color: #333333;
 }
 
 .recognition-card p {

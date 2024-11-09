@@ -74,3 +74,13 @@
         padding: 2rem 1rem; /* Reduce el padding lateral en dispositivos pequeños */
     }
 }
+/* Modo oscuro para la sección Sobre Mí */
+.dark-mode .about-section h2,
+.dark-mode .about-section p {
+    color: #ffffff; /* Título y descripción en blanco en modo oscuro */
+}
+
+.dark-mode .about-text p {
+    color: #dddddd; /* Texto descriptivo en un gris claro para mejor contraste */
+}
+

@@ -90,6 +90,26 @@
   background-color: #0056b3;
 }
 
+/* Modo oscuro: Aplica color blanco al título y descripción en modo oscuro */
+.dark-mode .projects-section h2,
+.dark-mode .projects-section p {
+  color: #ffffff;
+}
+
+/* Estilos para el modo oscuro solo para las tarjetas */
+.dark-mode .project-card {
+  background-color: #ffffff; /* Fondo blanco de la tarjeta en modo oscuro */
+  color: #333333; /* Texto en negro */
+}
+
+.dark-mode .project-card h3 {
+  color: #333333; /* Título en negro */
+}
+
+.dark-mode .project-card p {
+  color: #666666; /* Descripción en gris oscuro */
+}
+
 /* Media query para pantallas medianas (tablet) */
 @media (max-width: 1024px) {
   .projects-grid {
