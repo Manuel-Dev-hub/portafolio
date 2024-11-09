@@ -1,6 +1,7 @@
 // src/components/AboutMe.js
 import React from 'react';
 import './AboutMe.css';
+import profileImage from '../assets/perfil.jpg'; // Importa la imagen de perfil
 
 const AboutMe = () => {
   return (
@@ -17,7 +18,7 @@ const AboutMe = () => {
           </p>
         </div>
         <div className="about-image">
-          <img src="https://via.placeholder.com/250" alt="Perfil" />
+          <img src={profileImage} alt="Perfil" /> {/* Usa la imagen importada */}
         </div>
       </div>
     </section>

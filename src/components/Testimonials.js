@@ -2,25 +2,30 @@
 import React from 'react';
 import './Testimonials.css';
 
+// Importa las imágenes
+import mariaImage from '../assets/images/maria-gonzalez.jpg';
+import juanImage from '../assets/images/juan-perez.jpg';
+import lauraImage from '../assets/images/laura-rodriguez.jpg';
+
 const Testimonials = () => {
   const testimonialsList = [
     {
       name: 'María González',
       role: 'CEO de Innovatech',
       feedback: 'Trabajar con Manuel fue una experiencia increíble. Su enfoque innovador y su atención al detalle llevaron nuestro proyecto al siguiente nivel.',
-      image: 'https://via.placeholder.com/80',
+      image: mariaImage,
     },
     {
       name: 'Juan Pérez',
       role: 'CTO de Web Solutions',
       feedback: 'Manuel es un desarrollador altamente competente. Su habilidad para resolver problemas complejos y entregar resultados de alta calidad es impresionante.',
-      image: 'https://via.placeholder.com/80',
+      image: juanImage,
     },
     {
       name: 'Laura Rodríguez',
       role: 'Directora de Marketing en Digital Future',
       feedback: 'Manuel tiene una habilidad única para entender las necesidades del cliente y traducirlas en soluciones prácticas y efectivas. Lo recomiendo ampliamente.',
-      image: 'https://via.placeholder.com/80',
+      image: lauraImage,
     },
   ];
 

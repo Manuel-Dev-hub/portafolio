@@ -1,7 +1,7 @@
 /* Skills.css */
 
 .skills-section {
-    padding: 3rem 5rem; /* Aumenta el padding lateral */
+    padding: 3rem 5rem;
     background-color: #f8f9fa;
     text-align: center;
 }
@@ -18,15 +18,13 @@
     margin-bottom: 2rem;
 }
 
-/* Diseño del grid para las habilidades */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(1, 1fr); /* Por defecto, 1 columna */
+    grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
     justify-content: center;
 }
 
-/* Estilo de las tarjetas de habilidades */
 .skill-card {
     background-color: #ffffff;
     border-radius: 10px;
@@ -45,7 +43,7 @@
 }
 
 .skill-icon {
-    font-size: 2.5rem; /* Tamaño del icono */
+    font-size: 2.5rem;
     margin-bottom: 0.5rem;
 }
 
@@ -55,20 +53,35 @@
     margin: 0;
 }
 
-/* Media query para tabletas (pantallas medianas: 768px o más) */
+.documentation-btn {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.documentation-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Media query para tabletas */
 @media (min-width: 768px) {
     .skills-grid {
-        grid-template-columns: repeat(3, 1fr); /* 3 columnas en tabletas */
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
-/* Media query para pantallas grandes (PC: 1024px o más) */
+/* Media query para PC */
 @media (min-width: 1024px) {
     .skills-section {
-        padding: 3rem 10rem; /* Expande el padding lateral en pantallas grandes */
+        padding: 3rem 10rem;
     }
-    
     .skills-grid {
-        grid-template-columns: repeat(5, 1fr); /* 5 columnas en PC */
+        grid-template-columns: repeat(5, 1fr);
     }
 }

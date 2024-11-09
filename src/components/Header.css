@@ -1,4 +1,4 @@
-/* Estilo básico del encabezado y menú */
+/* Ajustes generales */
 .header {
   width: 100vw;
   background-color: #ffffff;
@@ -17,20 +17,6 @@
   font-weight: bold;
   color: #2A3D45;
   margin: 0;
-}
-
-/* Media query para pantallas medianas (por debajo de 768px) */
-@media (max-width: 768px) {
-  .header-title {
-    font-size: 1.5rem;
-  }
-}
-
-/* Media query para pantallas pequeñas (por debajo de 468px) */
-@media (max-width: 468px) {
-  .header-title {
-    font-size: 1.5rem;
-  }
 }
 
 .nav-bar {
@@ -71,6 +57,7 @@
   color: #1E90FF;
 }
 
+/* Botón de alternancia de tema */
 .theme-toggle {
   position: relative;
   left: -20px;
@@ -97,15 +84,19 @@
   color: #ffffff;
 }
 
-/* Estilo para el menú en modo oscuro */
+/* Estilo de modo oscuro para PC */
+.nav-bar.dark-mode-nav {
+  background-color: #333333;
+}
+
 .nav-bar.dark-mode-nav a {
   color: #ffffff;
 }
 
-/* Ajustes de color oscuro para dispositivos móviles */
+/* Media query para pantallas medianas (por debajo de 768px) */
 @media (max-width: 768px) {
-  .nav-bar.dark-mode-nav a {
-    color: #333333; /* Color oscuro en modo oscuro para móviles */
+  .header-title {
+    font-size: 1.5rem;
   }
 
   .menu-toggle {
@@ -130,5 +121,14 @@
 
   .nav-bar.open {
     display: flex;
+  }
+
+  /* Ajuste de color oscuro para dispositivos móviles */
+  .nav-bar.dark-mode-nav {
+    background-color: #ffffff;
+  }
+
+  .nav-bar.dark-mode-nav a {
+    color: #333333;
   }
 }
