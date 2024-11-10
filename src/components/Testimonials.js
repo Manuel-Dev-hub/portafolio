@@ -1,3 +1,4 @@
+// src/components/Testimonials.js
 import React from 'react';
 import './Testimonials.css';
 import LazyLoad from 'react-lazyload';
@@ -35,8 +36,14 @@ const Testimonials = () => {
       <div className="testimonials-grid">
         {testimonialsList.map((testimonial, index) => (
           <div className="testimonial-card" key={index}>
-            <LazyLoad height={80} offset={100}>
-              <img src={testimonial.image} alt={testimonial.name} className="testimonial-image" />
+            <LazyLoad height={80} offset={200} placeholder={<div className="image-placeholder" />}>
+              <img
+                src={testimonial.image}
+                alt={testimonial.name}
+                className="testimonial-image"
+                srcSet={`${testimonial.image} 1x, ${testimonial.image} 2x`} // Para alta resolución en pantallas retina
+                loading="lazy"
+              />
             </LazyLoad>
             <h3>{testimonial.name}</h3>
             <p className="testimonial-role">{testimonial.role}</p>

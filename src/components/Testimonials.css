@@ -19,7 +19,7 @@
 /* Estilos para modo oscuro */
 .dark-mode .testimonials-section h2,
 .dark-mode .testimonials-section p {
-  color: #ffffff; /* Cambia el color a blanco en modo oscuro */
+  color: #ffffff;
 }
 
 .testimonials-grid {
@@ -43,11 +43,21 @@
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
+/* Placeholder para imagen de perfil */
+.image-placeholder {
+  width: 80px;
+  height: 80px;
+  background-color: #e0e0e0; /* Color de fondo del placeholder */
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
 .testimonial-image {
   width: 80px;
   height: 80px;
   border-radius: 50%;
   margin-bottom: 1rem;
+  object-fit: cover;
 }
 
 .testimonial-card h3 {
@@ -56,19 +66,34 @@
   margin: 0.5rem 0;
 }
 
-/* Color negro para la descripción en modo oscuro */
-.dark-mode .testimonial-card p {
-  color: #000000;
-}
-
 .testimonial-role {
   font-size: 1rem;
   color: #888;
   margin-bottom: 1rem;
 }
 
+/* Color de feedback en el testimonial */
 .testimonial-feedback {
   font-size: 1rem;
   color: #666;
   font-style: italic;
+}
+
+/* Estilos en modo oscuro */
+.dark-mode .testimonial-card {
+  background-color: #444;
+  color: #ffffff;
+}
+
+.dark-mode .testimonial-card h3,
+.dark-mode .testimonial-role {
+  color: #ffffff;
+}
+
+.dark-mode .testimonial-feedback {
+  color: #dddddd;
+}
+
+.dark-mode .image-placeholder {
+  background-color: #666; /* Placeholder en modo oscuro */
 }
