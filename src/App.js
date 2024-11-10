@@ -14,7 +14,8 @@ import Recognition from './components/Recognition';
 import Testimonials from './components/Testimonials';
 import ContactButtons from './components/ContactButtons';
 import YourComponent from './components/YourComponent';
-import Experience from './components/Experience'; // Importa el componente Experience
+import Experience from './components/Experience';
+import Footer from './components/Footer'; // Importa el componente Footer
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -40,7 +41,7 @@ function App() {
       <section id="projects">
         <Projects />
       </section>
-      <section id="experience"> {/* Mueve experiencia aquí debajo de proyectos */}
+      <section id="experience">
         <Experience />
       </section>
       <section id="recognition">
@@ -63,6 +64,7 @@ function App() {
       </section>
 
       <ContactButtons />
+      <Footer /> {/* Añade el Footer al final */}
     </div>
   );
 }

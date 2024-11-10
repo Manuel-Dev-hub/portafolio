@@ -39,6 +39,13 @@ const Header = ({ toggleTheme, darkMode }) => {
     }
   };
 
+  const handleThemeToggle = () => {
+    toggleTheme();
+    if (isMobileView) {
+      setIsMenuOpen(false); // Cierra el menú cuando se hace clic en el botón de modo oscuro
+    }
+  };
+
   return (
     <header className="header">
       <h1 className="header-title">
@@ -72,7 +79,7 @@ const Header = ({ toggleTheme, darkMode }) => {
         <a href="#contact" onClick={handleNavLinkClick}>
           <FontAwesomeIcon icon={faEnvelope} /> Contacto
         </a>
-        <button className="theme-toggle" onClick={toggleTheme}>
+        <button className="theme-toggle" onClick={handleThemeToggle}>
           <FontAwesomeIcon icon={darkMode ? faMoon : faSun} />
         </button>
       </nav>
