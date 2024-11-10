@@ -24,7 +24,7 @@
 
 .blog-grid {
   display: grid;
-  grid-template-columns: repeat(1, 1fr); /* Por defecto, una columna en resoluciones pequeñas */
+  grid-template-columns: repeat(1, 1fr);
   gap: 2rem;
   justify-content: center;
 }
@@ -87,7 +87,7 @@
 /* Media query para pantallas grandes (PC: 1024px o más) */
 @media (min-width: 1024px) {
   .blog-grid {
-      grid-template-columns: repeat(3, 1fr); /* 3 columnas en PC */
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -109,17 +109,29 @@
 .external-link-btn:hover {
   background-color: #0056b3;
 }
+
 /* Modo oscuro para tarjetas de blog */
 .dark-mode .blog-card {
-  background-color: #ffffff; /* Fondo blanco en modo oscuro */
-  color: #333333; /* Texto negro */
+  background-color: #ffffff;
+  color: #333333;
 }
 
 .dark-mode .blog-card h3 {
-  color: #333333; /* Título negro */
+  color: #333333;
 }
 
 .dark-mode .blog-card p,
 .dark-mode .blog-date {
-  color: #666666; /* Descripción y fecha en tono oscuro */
+  color: #666666;
+}
+
+/* Modo oscuro para el contenido del modal */
+.dark-mode .modal-image {
+  filter: brightness(0.8); /* Oscurece la imagen en modo oscuro si es necesario */
+}
+
+.dark-mode .modal h2,
+.dark-mode .modal p,
+.dark-mode .modal .blog-date {
+  color: #ffffff; /* Texto en blanco en el modal en modo oscuro */
 }

@@ -1,8 +1,7 @@
-// src/components/Testimonials.js
 import React from 'react';
 import './Testimonials.css';
+import LazyLoad from 'react-lazyload';
 
-// Importa las imágenes
 import mariaImage from '../assets/images/maria-gonzalez.jpg';
 import juanImage from '../assets/images/juan-perez.jpg';
 import lauraImage from '../assets/images/laura-rodriguez.jpg';
@@ -36,7 +35,9 @@ const Testimonials = () => {
       <div className="testimonials-grid">
         {testimonialsList.map((testimonial, index) => (
           <div className="testimonial-card" key={index}>
-            <img src={testimonial.image} alt={testimonial.name} className="testimonial-image" />
+            <LazyLoad height={80} offset={100}>
+              <img src={testimonial.image} alt={testimonial.name} className="testimonial-image" />
+            </LazyLoad>
             <h3>{testimonial.name}</h3>
             <p className="testimonial-role">{testimonial.role}</p>
             <p className="testimonial-feedback">"{testimonial.feedback}"</p>

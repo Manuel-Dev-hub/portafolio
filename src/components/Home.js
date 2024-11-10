@@ -11,7 +11,7 @@ const Home = () => {
     <section id="home">
       <img src={perfil} alt="Foto de Manuel Antonio Rios Cardona" className="profile-image" />
       <h1>Manuel Antonio Rios Cardona</h1>
-      <p>Apasionado por la tecnología y el desarrollo web, con 1 año y medio de experiencia creando herramientas digitales para potenciar el crecimiento de las empresas.</p>
+      <p>Apasionado del desarrollo web con 1 años de experiencia en creación de herramientas digitales para impulsar el crecimiento empresarial.</p>
       <p><FontAwesomeIcon icon={faGraduationCap} style={iconStyle} /> Estudiante de Ingeniería en Sistemas</p>
       <p><FontAwesomeIcon icon={faLaptopCode} style={iconStyle} /> Full Stack Developer</p>
       <p><FontAwesomeIcon icon={faCode} style={iconStyle} /> JavaScript, React, Node.js, Python</p>

@@ -176,6 +176,7 @@
   z-index: 2;
 }
 /* Animación de máquina de escribir */
+/* Animación de máquina de escribir */
 @keyframes typing {
   from { width: 0; }
   to { width: 100%; }
@@ -186,10 +187,15 @@
   overflow: hidden;
   white-space: nowrap;
   border-right: 2px solid; /* Línea del cursor */
-  animation: typing 7s steps(60, end), blinkCursor 0.5s step-end infinite;
-  animation-delay: 60s; /* Espera de 1 segundo antes de que comience nuevamente */
-  animation-iteration-count: infinite; /* Hace que se repita infinitamente */
+  animation: typing 3s steps(30, end) forwards; /* Cambia a 3s y agrega forwards para que se detenga al final */
 }
+
+/* Elimina la animación de parpadeo del cursor para que no se repita */
+@keyframes blinkCursor {
+  from, to { border-color: transparent; }
+  50% { border-color: black; }
+}
+
 
 /* Ajuste las posiciones de los botones restantes en el círculo */
 .nav-button:nth-child(2) { top: 2%; left: 50%; transform: translate(-50%, -50%); }

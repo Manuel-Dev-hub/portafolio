@@ -1,3 +1,4 @@
+// src/components/Header.js
 import React, { useState, useEffect } from 'react';
 import './Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -52,6 +53,9 @@ const Header = ({ toggleTheme, darkMode }) => {
       <nav className={`nav-bar ${isScrolled ? 'fixed' : ''} ${isMenuOpen ? 'open' : ''} ${darkMode ? 'dark-mode-nav' : ''}`}>
         <a href="#projects" onClick={handleNavLinkClick}>
           <FontAwesomeIcon icon={faHome} /> Proyectos
+        </a>
+        <a href="#experience" onClick={handleNavLinkClick}>
+          <FontAwesomeIcon icon={faAward} /> Experiencia
         </a>
         <a href="#recognition" onClick={handleNavLinkClick}>
           <FontAwesomeIcon icon={faAward} /> Reconocimientos

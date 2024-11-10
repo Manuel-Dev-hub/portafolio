@@ -14,6 +14,7 @@ import Recognition from './components/Recognition';
 import Testimonials from './components/Testimonials';
 import ContactButtons from './components/ContactButtons';
 import YourComponent from './components/YourComponent';
+import Experience from './components/Experience'; // Importa el componente Experience
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -33,11 +34,14 @@ function App() {
         <Home />
         <NavWheel />
       </section>
-      <YourComponent /> {/* Componente con el fondo de la imagen */}
-      
+      <YourComponent />
+
       {/* Nuevo orden de las secciones */}
       <section id="projects">
         <Projects />
+      </section>
+      <section id="experience"> {/* Mueve experiencia aquí debajo de proyectos */}
+        <Experience />
       </section>
       <section id="recognition">
         <Recognition />
@@ -57,7 +61,7 @@ function App() {
       <section id="contact">
         <Contact />
       </section>
-      
+
       <ContactButtons />
     </div>
   );

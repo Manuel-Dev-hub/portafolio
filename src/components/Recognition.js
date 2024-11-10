@@ -80,7 +80,7 @@ const Recognition = () => {
         <Modal closeModal={closeModal}>
           <h2>Hackathon Universitario 2024</h2>
           <img src={hackathon1} alt="Hackathon 1" className="modal-image" onClick={() => openZoom(hackathon1)} />
-          <p><strong>1er Lugar</strong> por soluciones innovadoras en desarrollo de software.</p>
+          <p><strong>1er Lugar</strong> por soluciones en IA con perspectiva de género.</p>
           
           <img src={hackathon2} alt="Hackathon 2" className="modal-image" onClick={() => openZoom(hackathon2)} />
           <p>
@@ -93,15 +93,15 @@ const Recognition = () => {
           <div className="project-item">
             <img src={hackathon3} alt="Hackathon GreenPretzel" className="modal-image-small" onClick={() => openZoom(hackathon3)} />
             <div>
-              <p><strong>Hackathon GreenPretzel - Marzo 2024:</strong></p>
+              <p><strong>Hackathon GreenPretzel - 17 - 18 de mayo de 2024:</strong></p>
               <p>Desarrollamos una <strong>IA para la detección de contaminación</strong>, que logró mejorar la viabilidad de su plataforma en un <strong>50%</strong>. Este proyecto fue un avance significativo en soluciones ecológicas impulsadas por inteligencia artificial.</p>
             </div>
           </div>
           <div className="project-item">
             <img src={hackathon4} alt="Simulador de Tecnologías Emergentes" className="modal-image-small" onClick={() => openZoom(hackathon4)} />
             <div>
-              <p><strong>Simulador de Tecnologías Emergentes y Futuro del Empleo - Agosto 2024:</strong></p>
-              <p>Creamos un <strong>simulador en 3D</strong> con Unix, diseñado para brindar prácticas laborales a los estudiantes. Este simulador mejoró la efectividad en la capacitación en un <strong>70%</strong>, proporcionando experiencias de trabajo reales a través de la realidad aumentada.</p>
+              <p><strong>Simulador de Tecnologías Emergentes y Futuro del Empleo - 17 - 21 de septiembre de 2024:</strong></p>
+              <p>Creamos un <strong>simulador en 3D</strong> con Unity, diseñado para brindar prácticas laborales a los estudiantes. Este simulador mejoró la efectividad en la capacitación en un <strong>70%</strong>, proporcionando experiencias de trabajo reales a través de la realidad aumentada.</p>
             </div>
           </div>
         </Modal>

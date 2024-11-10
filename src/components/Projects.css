@@ -151,3 +151,32 @@
     font-size: 0.9rem;
   }
 }
+.project-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.tech-icons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.icon {
+  font-size: 1.5rem;
+}
+
+/* Colores específicos para cada icono */
+.react-icon {
+  color: #61DBFB; /* Color oficial de React */
+}
+
+.js-icon {
+  color: #F0DB4F; /* Color oficial de JavaScript */
+}
+
+.tailwind-icon {
+  color: #38B2AC; /* Color oficial de Tailwind CSS */
+}
+
