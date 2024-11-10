@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGraduationCap, faLaptopCode, faCode, faGlobe, faMobileAlt, faPalette, faSearch, faDatabase, faUsers, faRocket } from '@fortawesome/free-solid-svg-icons';
+import { faGraduationCap, faLaptopCode, faCode, faGlobe, faMobileAlt, faPalette, faSearch, faDatabase, faUsers, faRocket, faFileDownload } from '@fortawesome/free-solid-svg-icons';
 import './Home.css';
 import perfil from '../assets/perfil.jpg';
 
@@ -22,6 +22,11 @@ const Home = () => {
       <p><FontAwesomeIcon icon={faDatabase} style={iconStyle} /> SQL y NoSQL</p>
       <p><FontAwesomeIcon icon={faUsers} style={iconStyle} /> Líder de Equipo</p>
       <p><FontAwesomeIcon icon={faRocket} style={iconStyle} /> Transformación Digital</p>
+      
+      {/* Botón de descarga de CV */}
+      <a href="/cv.pdf" download="CV_Manuel_Antonio_Rios_Cardona" className="download-cv-button">
+        <FontAwesomeIcon icon={faFileDownload} /> Descargar CV
+      </a>
     </section>
   );
 };
