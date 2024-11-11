@@ -11,7 +11,7 @@ const AboutMe = () => {
       <div className="about-content">
         <div className="about-text">
           <p>
-            Con más de un año de experiencia en desarrollo web, he trabajado en proyectos de e-commerce, aplicaciones empresariales y sitios personalizados. Mi enfoque está en construir productos escalables que mejoren la experiencia del usuario.
+            Con un año de experiencia en desarrollo web, he trabajado en proyectos de e-commerce, aplicaciones empresariales y sitios personalizados. Mi enfoque está en construir productos escalables que mejoren la experiencia del usuario.
           </p>
           <p>
             Mis habilidades abarcan tecnologías como React, Node.js, MongoDB, y mucho más. Me gusta colaborar con otros profesionales para resolver problemas complejos y crear soluciones robustas.
