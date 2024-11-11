@@ -24,8 +24,8 @@ const Home = () => {
       <p><FontAwesomeIcon icon={faRocket} style={iconStyle} /> Transformación Digital</p>
       
       {/* Botón de descarga de CV */}
-      <a href="/cv.pdf" download="CV_Manuel_Antonio_Rios_Cardona" className="download-cv-button">
-        <FontAwesomeIcon icon={faFileDownload} /> Descargar CV
+      <a href="/CV_Manuel_Rios.pdf" download="CV_Manuel_Rios" className="download-cv-button">
+          <FontAwesomeIcon icon={faFileDownload} /> Descargar CV
       </a>
     </section>
   );
