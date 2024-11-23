@@ -23,7 +23,7 @@ const Experience = () => {
       <div className="experience-content">
         <div className="timeline">
           <div className="experience-item">
-            <h3>Agosto 2024 - Actualidad: Director y CEO de 18s Technologies</h3>
+            <h3>Agosto 2024 - Actualidad: Lider y Director en desarrollo de 18s Technologies</h3>
             <p>
               Lidero un equipo en desarrollo de software y sitios web, impulsando la expansión de 18s Technologies y manteniendo altos estándares de calidad y atención al cliente.
             </p>
@@ -37,13 +37,13 @@ const Experience = () => {
           <div className="experience-item">
             <h3>Mayo 2024: Participación en Hackathones</h3>
             <p>
-              Competí en tres hackathones y obtuve el <strong>1er lugar en uno</strong>, demostrando habilidades en resolución de problemas y trabajo en equipo.
+              Competí en tres hackathones y obtuve el <strong>1er lugar en uno</strong>, demostrando habilidades en resolución de problemas y trabajo en equipo en todo.
             </p>
           </div>
           <div className="experience-item">
             <h3>Noviembre 2023 - Mayo 2024: Freelancer Independiente</h3>
             <p>
-              Realicé proyectos de desarrollo web personalizados, ganando experiencia práctica y fortaleciendo mis habilidades técnicas en el proceso.
+              Realicé proyectos de desarrollo web personalizados, ganando experiencia práctica resolución de problemas y fortaleciendo mis habilidades técnicas en el proceso.
             </p>
           </div>
         </div>
